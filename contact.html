@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Saya - Berkah Air Rahayu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style agar gambar tampil rapi di tengah */
+        .contact-image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .contact-image {
+            width: 100%;
+            max-width: 600px; /* Batas lebar maksimal gambar */
+            height: auto;
+            border-radius: 12px; /* Sudut melengkung */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Bayangan halus */
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Berkah Air Rahayu</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="price.html">Harga & Layanan</a></li>
+                <li><a href="about.html">Tentang Saya</a></li>
+                <li><a href="contact.html" class="active">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Kontak Saya</h2>
+        
+        <div class="contact-image-container">
+            <img src="logo_2" 
+                 alt="Ilustrasi Kontak Rumah Minimalis" 
+                 class="contact-image">
+        </div>
+        <p>Anda bisa menghubungi saya melalui:</p>
+
+        <div class="social-links">
+            <a href="https://wa.me/62895614038040" target="_blank">WhatsApp</a>
+            <a href="mailto:ronisupriadi26@gmail.com" target="_blank">
+                Kirim Email
+            </a>
+        </div>
+
+        <form action="https://formspree.io/f/xjkbvwnp" method="POST">
+            <input type="text" name="name" placeholder="Nama Anda" required>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <textarea name="message" placeholder="Pesan Anda" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+
+</body>
+</html>
